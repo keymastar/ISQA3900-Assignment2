@@ -11,6 +11,10 @@ class ServiceForm(forms.ModelForm):
        model = Service
        fields = ('cust_name', 'service_category', 'description', 'location', 'setup_time', 'cleanup_time', 'service_charge' )
 
+class ProductForm(forms.ModelForm):
+   class Meta:
+       model = Product
+       fields = ('cust_name', 'product', 'p_description', 'quantity', 'pickup_time', 'charge')
 
 
 
